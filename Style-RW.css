@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #D2E0FB;
+  padding: 16px;  
+  font-family: "Poppins", sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #8EA7E9;
+}
+
+#Logo {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input[type="checkbox"] {
+  appearance: no ne;
+  -webkit-appearance: none;
+}
+
+label {
+   color: #F8F4EA; /*color barras*/
+   cursor: pointer;
+   display: none;
+}
+.menuc {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  /*margin-right: auto;
+  margin-left: auto; */
+
+}
+
+.menuc a {
+  padding: 8px;
+  transition: 0.5s ease-in-out;
+}
+
+.menuc a:hover {
+  background-color: darkgray;
+  width: 100%;
+  text-shadow: 0 0 1px #EAC7C7, 0 0 1px #EAC7C7; /*use in place of bold*/
+  transition: 0.5s;
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  label {
+    display: block;
+  }
+
+  .menuc {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    background-color: #333;
+    text-align: center;
+    gap: 32px;
+    top: 56px;
+    width: 100%;
+    height: calc(100vh - 80px);
+    left: -100%;
+    transition: 0.5s;
+    z-index: 1;
+
+  }
+
+  .menuc a{
+    width: 100%; /*add later for transition ease*/
+  }
+
+  input[type="checkbox"]:checked ~ .menuc {
+    left: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    flex: 1;
+    margin-bottom: 10px;
+
+  }
+
+}
+
+.hero{
+    margin: ;
+
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  display: flex;
+  position: relative;
+
+}
+.container{
+  display: flex;
+  background-color: #F8F4EA;
+  justify-content: space-between;
+  align-items: ;
+  /*height: 100vh;*/
+}
+
+.item{
+  margin: 10px;
+  text-align: center;
+}
+
+.item img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  
+}
+
+.item:nth-child(1) {
+
+
+}
+.item:nth-child(2) {
+
+}
+.item:nth-child(3) {
+
+}
