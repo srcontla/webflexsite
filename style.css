@@ -26,10 +26,12 @@ nav a {
 input[type="checkbox"] {
   appearance: no ne;
   -webkit-appearance: none;
+  display: none;
+  
 }
 
 label {
-   color: #F8F4EA; 
+   color: #F8F4EA; /*color barras*/
    cursor: pointer;
    display: none;
 }
@@ -50,7 +52,7 @@ label {
 .menuc a:hover {
   background-color: darkgray;
   width: 100%;
-  text-shadow: 0 0 1px #EAC7C7, 0 0 1px #EAC7C7; 
+  text-shadow: 0 0 1px #EAC7C7, 0 0 1px #EAC7C7; /*use in place of bold*/
   transition: 0.5s;
 
 
@@ -80,7 +82,7 @@ label {
   }
 
   .menuc a{
-    width: 100%;
+    width: 100%; /*add later for transition ease*/
   }
 
   input[type="checkbox"]:checked ~ .menuc {
@@ -122,11 +124,12 @@ label {
   background-color: #F8F4EA;
   justify-content: space-between;
   align-items: ;
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 .item{
   margin: 10px;
+  text-align: center;
 }
 
 .item img{
@@ -138,6 +141,7 @@ label {
 }
 
 .item:nth-child(1) {
+
 
 }
 .item:nth-child(2) {
